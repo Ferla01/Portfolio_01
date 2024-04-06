@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PORTFOLIO</title>
+  <!-- Include Bootstrap CSS -->
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Custom CSS -->
+  <style>
+    /* Add custom styles here */
+    body {
+      font-family: 'Times New Roman', Times, serif;
+      background-color: beige;
+    }
+
+    .profile-picture {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      margin: 20px auto; /* Center the image */
+      display: block;
+    }
+
+    .profile-name {
+      text-align: center;
+      font-size: 24px;
+      margin-bottom: 10px;
+      font-family: Arial, sans-serif; /* Change font for name */
+    }
+
+    .profile-description {
+      text-align: left;
+      font-size: 18px;
+      margin-top: 20px;
+      font-family: 'Courier New', Courier, monospace; /* Change font for description */
+    }
+
+    /* Activities Section */
+    .activity-item {
+      position: relative;
+      overflow: hidden;
+      margin-bottom: 20px;
+    }
+
+    .activity-item img {
+      width: 100%;
+      height: auto;
+      transition: transform 0.3s ease;
+      box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2); /* Add shadow effect */
+    }
+
+    .activity-item:hover img {
+      transform: scale(1.1);
+    }
+
+    /* Title for Activities Section */
+    .activities-title {
+      text-align: center;
+      font-size: 36px;
+      margin-bottom: 30px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top"> <!-- Add 'sticky-top' class -->
+    <a class="navbar-brand" href="#">HELLO THERE</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#about">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#activities">Activities</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contact">Contact</a> <!-- Added 'href="#contact"' -->
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Home Section -->
+  <section id="home" class="section">
+    <div class="container text-center">
+      <img src="path_to_your_profile_picture.jpg" alt="Profile Picture" class="profile-picture">
+      <div class="profile-name">FIND OUT</div>
+      <div class="profile-description"><center>Web Developer | Imaginative | Artistic </center>
+      </div>
+    </div>
+  </section>
+  
+  <br>
+  <br>
+  <br>
+  
+  
+  <hr style="height:2px;border-width: 10; color:#cfad57; background-color:#cfad57">
+  
+  <!-- About Section -->
+  <section id="about" class="section">
+    <div class="container">
+      <div class="activities-title">ABOUT ME</div>
+      <div class="row">
+        <div class="col-md-4">
+          <img src="path_to_square_picture.jpg" alt="Square Picture" class="profile-picture">
+        </div>
+        <div class="col-md-8">
+          <div class="profile-name">FERLYN AMASULA</div>
+          <div class="profile-description">
+            <p><strong>Age:</strong> 20</p>
+            <p><strong>Address:</strong> Ibabao Cordova Cebu</p>
+            <p><strong>Name of School:</strong> Cordova Public College</p>
+            <p><strong>Expertise:</strong> HTML, CSS, Bootstrap, JavaScript, Vuejs</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+    <hr style="height:2px;border-width: 10; color:#cfad57; background-color:#cfad57">
+
+  <!-- Activities Section -->
+  <section id="activities" class="section">
+    <div class="container">
+      <div class="activities-title">ACTIVITIES</div> <!-- Added Activities Title -->
+      <div class="row">
+        <div class="col-md-3">
+          <div class="activity-item">
+            <img src="path_to_activity_image_1.jpg" alt="Activity 1">
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="activity-item">
+            <img src="path_to_activity_image_2.jpg" alt="Activity 2">
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="activity-item">
+            <img src="path_to_activity_image_3.jpg" alt="Activity 3">
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="activity-item">
+            <img src="path_to_activity_image_4.jpg" alt="Activity 4">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+    <hr style="height:2px;border-width: 10; color:#cfad57; background-color:#cfad57">
+    
+      <!-- Contact Section -->
+  <section id="contact" class="section">
+    <div class="container">
+      <div class="activities-title">CONTACTS</div>
+      <div class="row">
+        <div class="col-md-4">
+
+
+
+        </div>
+      </div>
+    </div>
+  </section>
+  
+    <hr style="height:2px;border-width: 10; color:#cfad57; background-color:#cfad57">
+
+
+  <!-- Include Bootstrap JS and jQuery -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  
+  <!-- Include Vue.js -->
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.min.js"></script>
+</body>
+</html>
